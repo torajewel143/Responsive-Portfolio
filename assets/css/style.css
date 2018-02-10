@@ -1,0 +1,323 @@
+body {
+    background: url("../images/bg.jpg") repeat;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px 0px #929685;
+    position: static;
+}
+#name_block{
+    height: 40px;
+    background-color: #4fa9a4;
+    float: left;
+    padding: 20px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#name_block a {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+#menu_block {
+    float: right;
+    margin-top: 27px;
+}
+#menu_block ul li {
+    float: left;
+    padding: 0px 15px;
+}
+#menu_block ul li a {
+    color: #999999;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*********************      Body CSS *********************/
+#body_container {
+    width: 960px;
+    margin: 30px auto 0 auto;
+}
+#container {
+    width: 610px;
+    float: left;
+    background-color: #ffffff;
+    padding: 20px 20px 10px 20px;
+}
+#container_content p {
+    padding-top: 10px;
+    color: #666666;
+    line-height: 22px;
+}
+#container_content.portfolio-container {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+#container_content.contact-block{
+    margin-top: 20px;
+}
+
+#container h1 {
+    font-size: 22px;
+    color: #4fa9a4;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+}
+.left_float_img {
+    float: left;
+    padding: 10px 15px 5px 0px;
+}
+#sidebar{
+    width: 210px;
+    float: right;
+    padding: 20px 20px 10px 20px;
+    background-color: #ffffff;
+}
+#sidebar h2 {
+    color: #4fa9a4;
+    size: 16px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+#side_content {
+    margin: 20px 0px;
+}
+.icon {
+    float: left;
+}
+.icon img {
+    width: 63px;
+}
+.middle_icon {
+    margin: 0px 7px;
+}
+
+/************************** portfolio CSS *****************/
+
+.portfolio-img{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.portfolio-img img {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/************************** CONTACT CSS *****************/
+.row-box {
+    margin-bottom: 20px;
+    color: #888888;
+}
+.form-title {
+    padding-bottom: 7px;
+    font-weight: 500;
+}
+.form-title label{
+    cursor: pointer;
+}
+.form-control input, .form-control textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+}
+.form-control input:focus, .form-control textarea:focus {
+    border: 1px solid #9ac0e7;
+}
+.form-control textarea {
+    height: 200px;
+}
+.btn-submit {
+    padding: 3px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4fa9a4;
+    border: 1px solid #4fa9a4;
+    transition: all 0.8s;
+}
+.btn-submit:active{
+    background-color: #148f76;
+    border: 1px solid #148f76;
+    transition: all 0.5s;
+}
+
+/******************         Footer CSS ******************/
+footer{
+    border-top: 5px solid #4fa9a4;
+    margin-top: 30px;
+    background-color: #666666;
+    height: 60px;
+}
+#footer_content {
+    color: #ffffff;
+    margin-top: 23px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (min-width: 960px) {
+    #header-container {
+        width: 960px;
+        margin: 0 auto;
+    }    
+}
+@media (min-width: 768px) AND (max-width: 959px) {
+    #name_block {
+        height: auto;
+    }
+    #name_block a{
+        font-size: 24px;
+    }
+    #menu_block{
+        margin-top: 21px;
+    }
+
+    #body_container {
+        width: 100%;
+        margin: 30px auto 0 auto;
+        box-sizing: border-box;
+    }
+
+    #container {
+        width: 62%;
+        padding: 20px 20px 10px 20px;
+        box-sizing: border-box;
+        margin-left: 2%;
+    }
+
+    #sidebar{
+        width:32%;
+        padding: 20px 20px 10px 20px;
+        box-sizing: border-box;
+        margin-right: 2%;
+    }
+    #sidebar h2 {
+        size: 16px;
+        padding-bottom: 10px;
+    }
+    #side_content {
+        margin: 20px 0px;
+    }
+}
+
+@media (min-width: 641px) AND (max-width: 767px) {
+    #name_block {
+        height: auto;
+    }
+    #name_block a{
+        font-size: 24px;
+    }
+    #menu_block{
+        margin-top: 21px;
+    }
+
+    #body_container {
+        width: 100%;
+        margin: 30px auto 0 auto;
+        box-sizing: border-box;
+    }
+
+    #container {
+        width: auto;
+        padding: 20px 20px 10px 20px;
+        margin: 0px 15px 20px 15px;
+        float: none;
+    }
+
+    #sidebar{
+        width:auto;
+        float: none;
+        margin: 0px 15px 20px 15px;
+        padding: 20px 20px 10px 20px;
+    }
+    #sidebar h2 {
+        size: 16px;
+        padding-bottom: 10px;
+    }
+    #side_content {
+        margin: 20px 0px;
+    }
+}
+
+
+
+
+@media (max-width: 640px){
+    #header-container {
+        width: 100%;
+    }
+    #name_block{
+        background-color: #4fa9a4;
+        float: none;
+        text-align: center;
+        padding: 25px 0px;
+    }
+    #menu_block {
+        float: none;
+        margin-top: 0px;
+        text-align: center;
+        padding: 25px 0px;
+    }
+    #menu_block ul li {
+        display: inline-block;
+        float: none;
+        padding: 0px 40px;
+        border-right: 1px solid #eeeeee;
+    }
+    #menu_block ul li:last-child{
+        border-right: none;
+    }
+    .left_float_img {
+        width: 100%;
+        display: block;
+    }
+
+    /****************   body CSS ****************/
+    #body_container {
+        width: 100%;
+        margin: 30px auto 0 auto;
+        box-sizing: border-box;
+    }
+    #container {
+        width: auto;
+        background-color: #ffffff;
+        padding: 20px 20px 10px 20px;
+        margin: 0px 15px 20px 15px;
+        float: none;
+    }
+
+    #sidebar{
+        width:auto;
+        float: none;
+        margin: 0px 15px 20px 15px;
+        padding: 20px 20px 10px 20px;
+        background-color: #ffffff;
+    }
+    #sidebar h2 {
+        size: 16px;
+        padding-bottom: 10px;
+    }
+    #side_content {
+        margin: 20px 0px;
+    }
+
+    /******              Portfolio      *************/
+    .portfolio-img{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
